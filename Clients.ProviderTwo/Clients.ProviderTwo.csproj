@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AssemblyName>SystemAggregator.$(MSBuildProjectName)</AssemblyName>
+		<RootNamespace>SystemAggregator.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<DocumentationFile>XmlDoc\SystemAggregator.$(MSBuildProjectName.Replace(" ", "_")).xml</DocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Folder Include="XmlDoc\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Clients\Clients.csproj" />
+	</ItemGroup>
+
+</Project>
